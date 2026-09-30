@@ -1,0 +1,10 @@
+# The "contract": every question DEV can answer, and its answer type.
+# Model heads, training labels, and the API all read from this one file.
+questions:
+  - id: department
+    type: choice
+    options: [billing, technical, account, general]
+  - id: urgency
+    type: score          # value between 0 and 1
+  - id: escalate
+    type: yes_no
